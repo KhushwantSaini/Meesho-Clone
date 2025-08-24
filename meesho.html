@@ -1,11 +1,2813 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Shopping Site for Fashion, Electronics, Home & More | Meesho</title>
+    <link rel="stylesheet" href="meesho.css">
+    <!-- favicon icon -->
+    <link rel="icon"
+        href="https://th-i.thgim.com/public/news/national/m20bhv/article67229984.ece/alternates/FREE_1200/unnamed.jpg">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
 </head>
+
 <body>
+
+    <header class="header">
+
+        <div class="headerLeft">
+            <div class="logoContainer">
+                <img src="./img/meeshoLogo.svg" alt="Meesho Logo">
+            </div>
+
+            <div class="SearchBar">
+                <div class="searchIcon">
+                    <img src="img/search.png" alt="Search Icon">                                                                                                        
+                </div>
+                <form action="" id="inputForm">
+                    <input type="text" placeholder="Try Saree, Kurti or Search by Product Code" class="inputSearch">
+                </form>
+                <div class="inputCloseSearch">
+                    <i class="fa-solid fa-xmark" id="closeSearch"></i>
+                </div>
+                <div class="searchRecentModal">
+                    <h3>Recent Searches</h3>
+                    <div class="listofrecent">
+                        <div class="recentItem">
+                            <div class="recenticon">
+                                <img src="img/recent.png" alt="Recent Icon">
+                            </div>
+                        </div>    
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headerRight">
+            <div class="supplierContainer">
+                <p>Become a Supplier</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="InvestorContainer">
+            <p>Investor Relations</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="profileAndCart">
+            <div class="profileContainer">
+                <div class="profileIcon">
+
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="sc-ftTHYK bNQSGj hover" mr="8"
+                        iconsize="20">
+                        <g clip-path="url(#user_svg__a)">
+                            <path
+                                d="M15.316 13.016c1.512-1.058 2.516-2.797 2.516-4.784A5.835 5.835 0 0 0 12 2.4a5.835 5.835 0 0 0-5.832 5.832 5.79 5.79 0 0 0 2.517 4.784C4.343 14.291 1.2 17.996 1.2 22.37v.022c0 .896.843 1.609 1.825 1.609h17.95c.983 0 1.825-.713 1.825-1.61v-.02c0-4.375-3.143-8.08-7.484-9.354ZM7.853 8.232a4.148 4.148 0 0 1 8.294 0 4.148 4.148 0 0 1-8.294 0Zm13.122 14.083H3.025a.245.245 0 0 1-.14-.032c.054-4.45 4.126-8.057 9.115-8.057 4.99 0 9.05 3.596 9.115 8.057a.245.245 0 0 1-.14.032Z"
+                                fill="currentColor">
+                            </path>
+
+                        </g>
+                        <defs>
+                            <clipPath id="user_svg__a">
+                                <path fill="currentColor" transform="translate(1.2 2.4)" d="M0 0h21.6v21.6H0z"></path>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </div>
+                <p>Profile</p>
+            </div>
+
+            <div class="CartContainer">
+                <div class="CartIcon">
+                    <img src="img/cart.png">
+                </div>
+                <p>Cart</p>
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+
+
+
+    <!--navigation-->
+    <nav>
+        <ul>
+            <li>Women Ethnic
+                <div class="subMenu">
+                    <div id="womenEthic" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Women Western
+                <div class="subMenu">
+                    <div id="womenWestern" class="submenuList">
+
+                    </div>
+
+                </div>
+            </li>
+            <li>Men
+                <div class="subMenu">
+                    <div id="men" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Kids
+                <div class="subMenu">
+                    <div id="kids" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Home & Kitchen
+                <div class="subMenu">
+                    <div id="HomeAndKitchen" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Beauty & Health
+                <div class="subMenu">
+                    <div id="beautyAndHealth" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Jewellery & Accessories
+                <div class="subMenu">
+                    <div id="JewelleryAndAccessories" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Bags & Footwear
+                <div class="subMenu">
+                    <div id="BagsFootWearId" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Electronics
+                <div class="subMenu">
+                    <div id="ElectronicsId" class="submenuList">
+                    </div>
+                </div>
+            </li>
+
+            <li>Sports & Fitness
+                <div class="subMenu">
+                    <div id="SportsFitnessId" class="submenuList">
+                    </div>
+                </div>
+            </li>
+
+            <li>Car & Motorbike
+                <div class="subMenu">
+                    <div id="CarMotorbikeId" class="submenuList">
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+
+
+
+    <!--Smart Shopping Container-->
+
+    <div class="SmartShoppingContainer">
+        <div class="stylishImage">
+            <img alt="Smart Shopping" fetchpriority="high" loading="eager" width="1920" height="534" decoding="async"
+                data-nimg="1" style="color:transparent;width:100%;height:auto;display:block"
+                src="https://images.meesho.com/images/marketing/1755607590825.webp">
+                <!-- 1st src="https://images.meesho.com/images/marketing/1746425994914.webp" -->
+                <!-- 2nd src="https://images.meesho.com/images/marketing/1755607590825.webp" -->
+        </div>
+
+        <div class="SmartShoppingSection">
+            <div class="smartShoppingText">
+                <h2>Smart Shopping </h2>
+                <h2>Trusted by Millions</h2>
+            </div>
+
+            <div class="shopNow">
+                <p>Shop Now</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- 7 days easy return & COD section-->
+
+    <section class="codContainer">
+        <div class="codBox">
+            <div class="easyReturn">
+                <img src="img/returns.svg">
+                <span>7 Days Easy Return</span>
+            </div>
+
+            <div class="COD">
+                <img src="img/cod.svg">
+                <span>Cash on Delivery</span>
+            </div>
+
+            <div class="LowestPrices">
+                <img src="img/lowest-price.svg">
+                <span>Lowest Prices</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Show cast images below 7Days easy return & COD section -->
+
+    <section class="showCastImagesSection">
+        <div class="showCastBox">
+
+            <div class="ethnicWear">
+                <img src="https://images.meesho.com/images/marketing/1744634654837.webp">
+                <p>Ethnic Wear</p>
+            </div>
+
+            <div class="westernDresses">
+                <img src="https://images.meesho.com/images/marketing/1744634725496.webp">
+                <p>Western Dresses</p>
+            </div>
+
+            <div class="Menswear">
+                <img src="https://images.meesho.com/images/marketing/1744634780426.webp">
+                <p>Menswear</p>
+            </div>
+
+            <div class="Footwear">
+                <img src="https://images.meesho.com/images/marketing/1744634814643.webp">
+                <p>Footwear</p>
+            </div>
+
+            <div class="HomeDecor">
+                <img src="https://images.meesho.com/images/marketing/1744634835018.webp">
+                <p>Home Decor</p>
+            </div>
+
+            <div class="Beauty">
+                <img src="https://images.meesho.com/images/marketing/1744634871107.webp">
+                <p>Beauty</p>
+            </div>
+
+            <div class="Accessories">
+                <img src="https://images.meesho.com/images/marketing/1744634909968.webp">
+                <p>Accessories</p>
+            </div>
+
+            <div class="Grocery">
+                <img src="https://images.meesho.com/images/marketing/1744634937295.webp">
+                <p>Grocery</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Gold Products you love .Quality we trust section -->
+
+    <section class="GoldContainer">
+        <img class="GoldImage" src="https://images.meesho.com/images/marketing/1744698265981.webp">
+
+        <div class="shop-now-button">
+            <a class="shop-now" href="#">Shop Now</a>
+        </div>
+
+        <div class="GoldCollection">
+
+            <div class="lehengas">
+                <img src="https://images.meesho.com/images/marketing/1744722796811.webp">
+
+            </div>
+
+            <div class="Menwear">
+                <img src="https://images.meesho.com/images/marketing/1744635113661.webp">
+            </div>
+
+
+            <div class="Sarees">
+                <img src="https://images.meesho.com/images/marketing/1744635139351.webp">
+            </div>
+
+
+            <div class="Jewellery">
+                <img src="https://images.meesho.com/images/marketing/1744635189897.webp">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Orginal Brands-Brands section -->
+
+    <section class="BrandSelection">
+        <div class="originalBrandsHeader">
+
+            <div class="originalBrands">
+                <p>Original Brands</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" iconSize="32"
+                    class="sc-ftTHYK gBDqal">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M23.543 1.188A1.699 1.699 0 0 0 21.14.192l-4.357 2.264a1.699 1.699 0 0 1-1.566 0L10.86.192a1.699 1.699 0 0 0-2.403.996l-1.48 4.681c-.167.528-.58.941-1.108 1.108l-4.681 1.48a1.699 1.699 0 0 0-.996 2.403l2.264 4.357a1.699 1.699 0 0 1 0 1.566L.192 21.14a1.699 1.699 0 0 0 .996 2.403l4.681 1.48c.528.167.941.58 1.108 1.108l1.48 4.681a1.699 1.699 0 0 0 2.403.996l4.357-2.264a1.699 1.699 0 0 1 1.566 0l4.357 2.264c.936.486 2.085.01 2.403-.995l1.48-4.682c.167-.528.58-.941 1.108-1.108l4.681-1.48a1.699 1.699 0 0 0 .996-2.403l-2.264-4.357a1.699 1.699 0 0 1 0-1.566l2.264-4.357a1.699 1.699 0 0 0-.995-2.403l-4.682-1.48a1.699 1.699 0 0 1-1.108-1.108l-1.48-4.681ZM7.737 15.199c.815-.815 1.724-1.226 2.54-.411l3.854 3.855 7.807-7.807c.815-.815 1.708-.387 2.523.428.815.815 1.272 1.68.457 2.495l-9.28 9.28c-1.086 1.086-2.01 1.004-3.096-.083L7.325 17.74c-.815-.815-.403-1.724.412-2.54Z"
+                        fill="#6625FF"></path>
+                </svg>
+            </div>
+
+            <a class="view-all" href="#">VIEW ALL
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </a>
+
+        </div>
+
+
+
+        <div class="Brands">
+
+            <a href="#" class="Brand-Item PersonalCare">
+                <img src="https://images.meesho.com/images/marketing/1744635542873.webp">
+            </a>
+
+            <a href="#" class="Brand-Item electronics">
+                <img src="https://images.meesho.com/images/marketing/1744635521751.webp">
+            </a>
+
+            <a href="#" class="Brand-Item Makeup">
+                <img src="https://images.meesho.com/images/marketing/1744635497001.webp">
+            </a>
+
+
+            <a href="#" class="Brand-Item SmartPhones">
+                <img src="https://images.meesho.com/images/marketing/1744635464683.webp">
+            </a>
+
+
+            <a href="#" class="Brand-Item MenPerfume">
+                <img src="https://images.meesho.com/images/marketing/1744635432891.webp">
+            </a>
+
+
+            <a href="#" class="Brand-Item Bags">
+                <img src="https://images.meesho.com/images/marketing/1744635402151.webp">
+            </a>
+
+            <a href="#" class="Brand-Item Footwear">
+                <img src="https://images.meesho.com/images/marketing/1744635614888.webp">
+            </a>
+
+            <a href="#" class="Brand-Item Books">
+                <img src="https://images.meesho.com/images/marketing/1744635646070.webp">
+            </a>
+        </div>
+
+        <button direction="left" class="side-button left-button">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <button direction="right" class="side-button right-button">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg></button>
+
+
+    </section>
+
+
+
+
+    <!-- Slide animation of Brands Section -->
+
+    <section class="SlideAnimationOfBrands">
+        <div class="SlideAnimationContainer">
+
+            <div class="SlideAnimations">
+
+                <div class="slide-brand-item wow">
+                    <img src="https://images.meesho.com/images/marketing/1743159302944.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item mamaearth">
+                    <img src="https://images.meesho.com/images/marketing/1743159322237.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item wildStone">
+                    <img src="https://images.meesho.com/images/marketing/1743159363205.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item plantobegood">
+                    <img src="https://images.meesho.com/images/marketing/1743159377598.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item nivea">
+                    <img src="https://images.meesho.com/images/marketing/1743159393231.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item himalaya">
+                    <img src="https://images.meesho.com/images/marketing/1743159415385.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item mi">
+                    <img src="https://images.meesho.com/images/marketing/1744636558884.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item bata">
+                    <img src="https://images.meesho.com/images/marketing/1744636599446.webp" alt="">
+                </div>
+                <div class="slide-brand-item wow">
+                    <img src="https://images.meesho.com/images/marketing/1743159302944.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item mamaearth">
+                    <img src="https://images.meesho.com/images/marketing/1743159322237.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item wildStone">
+                    <img src="https://images.meesho.com/images/marketing/1743159363205.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item plantobegood">
+                    <img src="https://images.meesho.com/images/marketing/1743159377598.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item nivea">
+                    <img src="https://images.meesho.com/images/marketing/1743159393231.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item himalaya">
+                    <img src="https://images.meesho.com/images/marketing/1743159415385.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item mi">
+                    <img src="https://images.meesho.com/images/marketing/1744636558884.webp" alt="">
+                </div>
+
+                <div class="slide-brand-item bata">
+                    <img src="https://images.meesho.com/images/marketing/1744636599446.webp" alt="">
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- meesho trendz section -->
+
+    <section class="meeshoTrendzContainer">
+        <img class="Container-image" src="https://images.meesho.com/images/marketing/1744698143534.webp">
+
+        <a href="#" class="overlay-content">
+            <button class="shopnow-button">Shop Now</button>
+        </a>
+
+        <div class="TrendzCollection">
+
+            <div class="TrendzCollectionItem summerDresses">
+                <img src="https://images.meesho.com/images/marketing/1744635893307.webp">
+                <div class="Trendzheading">Summer Dresses</div>
+            </div>
+
+            <div class="TrendzCollectionItem baggyJeans">
+                <img src="https://images.meesho.com/images/marketing/1744635812270.webp">
+                <div class="Trendzheading">Baggy Jeans</div>
+            </div>
+
+            <div class="TrendzCollectionItem Earrings">
+                <img src="https://images.meesho.com/images/marketing/1744635870215.webp">
+                <div class="Trendzheading">Earrings</div>
+            </div>
+
+            <div class="TrendzCollectionItem ChicFlats">
+                <img src="https://images.meesho.com/images/marketing/1744635846873.webp">
+                <div class="Trendzheading">Chic Flats</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products for you section -->
+
+    <section class="productsForyou">
+        <div class="inside-productsForyou">
+            <div class="inside-1-productsForyou">
+                <div class="ProductScrollingStatus"></div>
+                <div class="inside-2-productsForyou">
+                    <h4 font-size="32px" font-weight="book" color="greyBase" class="h4-heading-for-product">Products For
+                        You</h4>
+                    <div class="Products-For-you-Container">
+                        <div class="Product-listing" width="25">
+                            <div class="sortByRelevance">
+                                <ul class="ul-for-sortBYrelevance">
+                                    <li class="li-for-sortBYrelevance">
+                                        <div class="li-content" value="Relevance">
+                                            <div class="content" color="white">
+                                                <p class="content-ka-p">Sort by : </p>
+                                                <span class="content-ka-span">Relevance</span>
+                                            </div>
+                                            <svg viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="12" ml="9.5" class="content-ka-svg">
+                                                <path
+                                                    d="M.31.316a1.079 1.079 0 0 0 0 1.515l4.125 4.17-4.124 4.17a1.079 1.079 0 0 0 0 1.515 1.05 1.05 0 0 0 1.499 0l4.88-4.933a1.079 1.079 0 0 0 0-1.515L1.81.305a1.06 1.06 0 0 0-1.5.01Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="filterPart" color="white">
+                                <div class="filter-Content">
+                                    <span class="filter-ka-span">FILTERS</span>
+                                </div>
+
+                                <span class="span-for-1000-products">1000+
+                                    Products</span>
+
+
+                                <div class="divider-line">
+                                    <div class="line"></div>
+                                </div>
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Category</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                        <div open class="Category-ka-search-section">
+                                            <div class="inside-category-search-option">
+                                                <div type="list" class="Category-Search-list">
+                                                    <div placeholder="Search" width="100%"
+                                                        class="PlaceholderOfCategory">
+                                                        <div class="placeholderKaSvg">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_1770_1836)">
+                                                                    <path
+                                                                        d="M19.7695 18.6698L16.0096 14.9098C17.3296 13.3298 18.1296 11.2999 18.1296 9.07989C18.1296 4.05995 14.0697 0 9.05978 0C4.0599 0 0 4.05995 0 9.07989C0 14.0998 4.0599 18.1598 9.05978 18.1598C11.2897 18.1598 13.3297 17.3498 14.9096 16.0098L18.6695 19.7698C18.9695 20.0698 19.4695 20.0698 19.7695 19.7698C20.0795 19.4698 20.0795 18.9698 19.7695 18.6698ZM9.05978 16.5998C4.91988 16.5998 1.54996 13.2298 1.54996 9.07989C1.54996 4.92994 4.91988 1.55998 9.05978 1.55998C13.1997 1.55998 16.5696 4.92994 16.5696 9.07989C16.5696 13.2298 13.1997 16.5998 9.05978 16.5998Z"
+                                                                        fill="#8B8BA3"></path>
+                                                                </g>
+                                                                <defs>
+                                                                    <clipPath id="clip0_1770_1836">
+                                                                        <rect width="19.9995" height="19.9998"
+                                                                            fill="white"></rect>
+                                                                    </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                        </div>
+
+                                                        <input type="text" placeholder="Search"
+                                                            class="search-Heading-inside-placeholder" value="">
+                                                    </div>
+                                                    <div label="Women T-shirts" name="Women T-shirts"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span"> Women T-shirts</span>
+                                                    </div>
+
+
+                                                    <div label="Women Top And Tunics" name="Women Top And Tunics"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Women Top And
+                                                            Tunics</span>
+                                                    </div>
+
+                                                    <div label="Analog Watches" name="Analog Watches"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Analog Watches</span>
+                                                    </div>
+
+
+                                                    <div label="Bangles & Bracelets" name="Bangles & Bracelets"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Bangles &
+                                                            Bracelets</span>
+                                                    </div>
+
+
+                                                    <div label="Bangles & Bracelets" name="Bangles & Bracelets"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Bedsheets</span>
+                                                    </div>
+
+                                                    <div label="Bangles & Bracelets" name="Bangles & Bracelets"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Bike Covers</span>
+                                                    </div>
+
+
+                                                    <div label="Bangles & Bracelets" name="Bangles & Bracelets"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Blouses</span>
+                                                    </div>
+
+
+                                                    <div label="Bangles & Bracelets" name="Bangles & Bracelets"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Bluetooth
+                                                            Headphones</span>
+                                                    </div>
+
+
+                                                    <div label="Bangles & Bracelets" name="Bangles & Bracelets"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Boxes, Baskets &
+                                                            Bins</span>
+                                                    </div>
+
+
+                                                    <div label="Bangles & Bracelets" name="Bangles & Bracelets"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Dresses</span>
+                                                    </div>
+
+
+                                                    <div label="Bangles & Bracelets" name="Bangles & Bracelets"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Dupatta Sets</span>
+                                                    </div>
+
+                                                    <div label="Bangles & Bracelets" name="Bangles & Bracelets"
+                                                        class="Category-ki-list">
+                                                        <span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" iconSize="20"
+                                                                class="Category-ki-list-ka-svg">
+                                                                <path
+                                                                    d="M16.02 3.56C16.25 3.56 16.44 3.75 16.44 3.98V16.02C16.44 16.25 16.25 16.44 16.02 16.44H3.98C3.75 16.44 3.56 16.25 3.56 16.02V3.98C3.56 3.75 3.75 3.56 3.98 3.56H16.02ZM16.02 2H3.98C2.89 2 2 2.89 2 3.98V16.02C2 17.11 2.89 18 3.98 18H16.02C17.11 18 18 17.11 18 16.02V3.98C18 2.89 17.11 2 16.02 2Z"
+                                                                    fill="#666666"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="Category-ki-list-ka-span">Earrings & Studs</span>
+                                                    </div>
+
+
+                                                    <div class="Show-More-Button">
+                                                        <button class="Show-More-btn">
+                                                            <span class="show-more-btn-name">Show More</span>
+                                                        </button>
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="Gender">
+                                    <div class="inside-Gender">
+                                        <div class="Gender-heading">
+                                            <span class="Gender-ka-span">Gender</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="Gender-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+
+                                        <div class="genderTypes">
+                                            <div class="genderContent">
+                                                <div type="pill" class="GenderBox">
+
+                                                    <span label="boys" class="Gender-ka-boys">
+                                                        <p class="boys-ka-p">Boys</p>
+                                                    </span>
+
+                                                    <span label="Girls" class="Gender-ka-girls">
+                                                        <p class="girls-ka-p">Girls</p>
+                                                    </span>
+
+
+                                                    <span label="men" class="Gender-ka-men">
+                                                        <p class="men-ka-p">Men</p>
+                                                    </span>
+
+
+                                                    <span label="women" class="Gender-ka-women">
+                                                        <p class="women-ka-p">Women</p>
+                                                    </span>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Color</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Fabric</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Dial Shape</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Size</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Price</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Rating</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Occassion</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">combo of</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Kurta Fabric</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Dupatta Color</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Combo</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Discount</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Reversible</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Used For</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Body Material</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Meesho Gold </span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Meesho Mall</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Fit/Shape</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Material</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Bottom Length</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Print Or Pattern Type</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Bottom Style</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Bottomwear Fabric</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Oranmentation</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Bottom Pattern Type</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Border</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Surface Styling</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Back Type</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Top Pattern</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Category</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Inner Fabric</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="Category">
+                                    <div class="inside-Category" label="Category">
+                                        <div class="categoryHeading">
+                                            <span class="category-ka-span">Top Type</span>
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                iconSize="20" class="category-ka-svg">
+                                                <path
+                                                    d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z"
+                                                    fill="#666"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-line">
+                                        <div class="line"></div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="Products-Image" width="75">
+                            <div class="inside-Products-Image">
+                                <div class="inside-1-Products-Image">
+                                    <div class="inside-2-products-image">
+                                        <div class="inside-3-products-image">
+                                            <div class="Product-Container">
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/404976473/jghn0_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +2 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Mi A3,Redmi A3
+                                                                            Cases & Covers</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹157</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.0</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            7133 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/437592461/pzjdf_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +10 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Cutiepie Trendy Boys Top & Bottom Sets</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹207</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.2</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            21656 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+                                                
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/191005346/mocgn_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        <!-- +2 More -->
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Chitrarekha Attractive Kurtis</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹185</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.0</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            98038 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/387888523/e7xuc_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +2 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Fancy Clothes Pegs</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹121</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.1</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            18627 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/346396061/hygo7_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        <!-- +2 More -->
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Charvi Ensemble Women Kurta Sets</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹358</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.4</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            67135 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+
+                                                    <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/328558222/djoey_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        <!-- +2 More -->
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">GHAR SOAPS MAGIC SOAP 300 GM</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹331</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.2</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            26204 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/454622064/zwytc_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +7 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">wired earphones best quality pack of 2</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹130</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">3.9</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            4684 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/392743867/zldhi_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        <!-- +7 More -->
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Bluetooth Speakers</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹263</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.1</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            2278 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/513573381/vyjby_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +4 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Men's Color Block Round Neck T-Shirt - Casual Summer Sportswear, Stretch Polyester Blend, Comfortable Knit Fabric for Casual Attire, Casual Outings | Relaxed Fit Top | Durable Fabric, T Shirt</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹234</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.0</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            1805 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/522257743/jzwqn_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +1 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">DERMATOUCH Bright &amp; Even Tone Face Wash | with Niacinamide, Vitamin E and Kojic Acid | Daily Gentle Face Wash For Tan, Pigmentation, Uneven Tone | 30G</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹145</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">3.9</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            2807 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/441823171/ctclw_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +24 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">DC| CROP SHIRT BLUE </p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹271</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">3.8</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            3008 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/496203956/tpdcz_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        <!-- +7 More -->
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">6 PCS GIFT SET </p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹99</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.1</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            687 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/556747940/dfanv_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +10 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">REAL MADRID BYBLADE KAY DRAG0N EDITION|LA LIGA AND UCL | FAN JERSEY | SUMMER FABRIC | 2025 MEN JERSEY | 15UCL BADGE IN HAND | EUROPEAN FOOTBALL</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹263</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.5</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            9873 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/436294140/v9okd_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        <!-- +7 More -->
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">crop top for women  |crop top for girls| crop tops for women under 200 | tank top | combo white -black top |sleeveless top party wear top</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹330</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.1</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            3868 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/475910023/3fvm6_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +7 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Yellow Kurta Plazo Dupatta</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹406</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.3</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            20258 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/418291379/tyunf_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +1 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Trendy Sensational Men Raincoats</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹289</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.0</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            714 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/508397041/qw03k_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        <!-- +7 More -->
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Metal Incense Burner Loban Dani Dhoop Dani Loban Dani Aarti Metal Loban Dhoop Dani/Dhoop Dani Burner Loban Burner with Handle, Dhoop Dhuni Burner Sambrani Dhoop for Home Office Temple Puja Incense Burner,, Resin &amp; Home Office Temple Prayer Butler Metal,</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹195</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.5</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            3697 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/411910808/zqjjt_512.avif?width=360"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        <!-- +7 More -->
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Stylish Printed Kids Boys And Girls Clothing Set</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹154</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.1</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            8369 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/441518267/qdyn1_512.avif?width=512"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        <!-- +7 More -->
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Diva Glittering Mangal sutras For Women</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹180</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.0</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            512 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/509219871/q1qoz_512.avif?width=512"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        <!-- +7 More -->
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">FLOWER DESIGNER SAREE</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹315</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.3</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            16745 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+                                                <div class="inside-Product-Container">
+                                                    <a href="#">
+                                                        <div class="anchor-Tag-Ka-div">
+                                                            <div class="Product-image">
+                                                                <img src="https://images.meesho.com/images/products/325112308/siz11_512.avif?width=512"
+                                                                    alt="Charvi Ensemble Women Kurta Sets"
+                                                                    loading="eager" class="Product-image-ka-src"
+                                                                    style="object-fit: contain;">
+                                                                <div class="Product-image-down-heading">
+                                                                    <span class="Product-down-heading">
+                                                                        +2 More
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Image-price-name-container">
+
+                                                                <span class="Image-price-name-span">
+
+                                                                    <div class="Image-price-name-ki-heading">
+                                                                        <p class="heading-ke-andar-ka-p">Bluetooth Foldable R1S WITH FILL LIGHT Extendable, Portable Bluetooth Selfie Tripod Stand and Detachable Wireless Remote, Ultra Compact Selfie Stick for Mobile and All Smart Phones Black Selfie Stick,Selfie Stick Tripod Stand and , Ultra Compact 3 in 1 Mobile Phone</p>
+                                                                    </div>
+
+                                                                    <div class="Price-Tag">
+                                                                        <h5 class="priceOfProduct">₹217</h5>
+                                                                    </div>
+                                                                </span>
+
+                                                                <div class="freeDeliveryContainer">
+                                                                    <div class="freeDelivery">
+                                                                        <span class="free-Delivery-span">Free
+                                                                            Delivery</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rating-review-container">
+                                                                    <div class="rating-review">
+                                                                        <span class="rating" label="4">
+                                                                            <span class="rating-ka-span">4.1</span>
+                                                                            <i class="fa-solid fa-star"
+                                                                                id="rating-ka-star"></i>
+                                                                        </span>
+                                                                        <span class="review">
+                                                                            12720 Reviews
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- ----------------footer part ------------------------------------------------------------>
+<footer class="footer">
+  <div class="footer-section shop">
+    <h2>Shop Non-Stop on Meesho</h2>
+    <p>Trusted by crores of Indians</p>
+    <p>Cash on Delivery | Free Delivery</p>
+    <div class="store-buttons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+    </div>
+  </div>
+  <div class="footer-section">
+    <ul>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Become a supplier</a></li>
+      <li><a href="#">Hall of Fame</a></li>
+      <li><a href="#">Sitemap</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <ul>
+      <li><a href="#">Legal and Policies</a></li>
+      <li><a href="#">Meesho Tech Blog</a></li>
+      <li><a href="#">Notices and Returns</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h2>Reach out to us</h2>
+    <div class="social-icons">
+      <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+    </div>
+  </div>
+  <div class="footer-section contact-details">
+    <h2>Contact Us</h2>
+    <p>
+      Meesho Technologies Private Limited<br>
+      CIN: U62099KA2024PTC186568<br>
+      3rd Floor, Wing-E, Helios Business Park,<br>
+      Kadubeesanahalli Village, Varthur Hobli,<br>
+      Outer Ring Road Bellandur, Bangalore,<br>
+      Bangalore South, Karnataka, India, 560103<br>
+      E-mail address: query@meesho.com<br>
+      © 2015-2025 Meesho.com
+    </p>
+  </div>
+</footer>
+
+<hr class="last-hr">
+<p class="last-p">
+© 2015-2025 Meesho Technologies Private Limited. All rights reserved.
+</p>
+
     
+    <script src="meesho.js" type="module"></script>
 </body>
+
 </html>
